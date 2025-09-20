@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+  color: #333;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+#output {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+#output div.section {
+  margin-bottom: 15px;
+}
+
+.student.highlight {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
