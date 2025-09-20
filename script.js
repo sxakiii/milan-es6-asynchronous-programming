@@ -65,7 +65,6 @@ function renderAll(data) {
   const output = document.getElementById('output');
   output.innerHTML = '';
 
-  // Students Section
   const studentsSection = el('div', '', 'section');
   studentsSection.appendChild(el('h3', 'Students:'));
   data.students.forEach(s => {
@@ -76,7 +75,6 @@ function renderAll(data) {
   });
   output.appendChild(studentsSection);
 
-  // Courses Section
   const coursesSection = el('div', '', 'section');
   coursesSection.appendChild(el('h3', 'Courses:'));
   data.courses.forEach(c => {
@@ -85,7 +83,6 @@ function renderAll(data) {
   });
   output.appendChild(coursesSection);
 
-  // Instructors Section
   const instrSection = el('div', '', 'section');
   instrSection.appendChild(el('h3', 'Instructors:'));
   data.instructors.forEach(i => {
@@ -95,7 +92,6 @@ function renderAll(data) {
   output.appendChild(instrSection);
 }
 
-// Fetch and render
 fetchWithThen()
   .then(data => {
     renderAll(data);
@@ -105,9 +101,9 @@ fetchWithThen()
     out.textContent = 'Failed to load data (see console).';
   });
 
-// Also run async fetch to show logs
 (async function demoAsync() {
   try {
     await fetchWithAsync();
   } catch (err) {}
+
 })();
