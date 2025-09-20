@@ -1,30 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ES6 Async Programming - Students</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student & Instructor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>ES6 Async Programming — Students Demo</h1>
+    <header>
+        <h1>Student & Instructor Dashboard</h1>
+    </header>
 
-    <section>
-      <h2>Console Output</h2>
-      <p>Open the developer console to see fetch logs.</p>
-    </section>
+    <div class="section">
+        <h2>Part 1 - ES6 Classes</h2>
+        
+        <h3>Student Class</h3>
+        <div class="console" id="student-introductions"></div>
+        
+        <h3>Instructor Class</h3>
+        <div class="console" id="instructor-teaching"></div>
+    </div>
 
-    <section>
-      <h2>Rendered Output</h2>
-      <div id="output"></div>
-    </section>
+    <div class="section">
+        <h2>Part 2 - Asynchronous JavaScript (with console output)</h2>
+        
+        <h3>Promise Version</h3>
+        <div class="console" id="promise-output"></div>
+        
+        <h3>Async/Await Version</h3>
+        <div class="console" id="async-output"></div>
+    </div>
 
-    <footer>
-      <p>Repository: milan-es6-asynchronous-programming</p>
-    </footer>
-  </main>
+    <div class="section">
+        <h2>Part 3 & 4 - Displaying Data & Relationships</h2>
+        
+        <div class="two-column">
+            <div>
+                <h3>Students</h3>
+                <ul id="students-list"></ul>
+            </div>
+            
+            <div>
+                <h3>Courses</h3>
+                <ul id="courses-list"></ul>
+            </div>
+        </div>
+        
+        <h3>Instructors</h3>
+        <ul id="instructors-list"></ul>
+        
+        <h3>Student to Course Relationships</h3>
+        <ul id="student-course-list"></ul>
+        
+        <h3>Course to Instructor Relationships</h3>
+        <ul id="course-instructor-list"></ul>
+    </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
